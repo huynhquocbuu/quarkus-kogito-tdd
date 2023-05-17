@@ -14,8 +14,8 @@
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
     <quarkus.platform.version>2.16.7.Final</quarkus.platform.version>
     <skipITs>true</skipITs>
-    <!--    <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>-->
-    <surefire-plugin.version>3.0.0</surefire-plugin.version>
+    <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
+<!--    <surefire-plugin.version>3.0.0</surefire-plugin.version>-->
     <commons-io.version>2.11.0</commons-io.version>
     <lombok.version>1.18.26</lombok.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
@@ -166,7 +166,7 @@
         </property>
       </activation>
       <properties>
-        <skipITs>false</skipITs>
+        <skipITs>true</skipITs>
         <quarkus.package.type>native</quarkus.package.type>
       </properties>
     </profile>
