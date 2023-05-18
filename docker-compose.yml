@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  quarkus-kogito-tdd-native:
+    container_name: quarkus-kogito-tdd-native
+    image: quarkus/quarkus-kogito-tdd
+    #restart: unless-stopped
+    ports:
+      - 9981:9980
+    volumes:
+      - ./external-config:/work/config
+      #- ./external-dmn:/work/dmn
